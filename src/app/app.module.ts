@@ -5,11 +5,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeLoginComponent } from './home-login/home-login.component';
+import { AddToDoComponent } from './add-to-do/add-to-do.component';
 
 const myRoute : Routes=[
   {
   path:"",
   component:HomeLoginComponent
+  },
+  {
+    path:"add",
+    component:AddToDoComponent
   }
 
 ]
@@ -17,7 +22,8 @@ const myRoute : Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    HomeLoginComponent
+    HomeLoginComponent,
+    AddToDoComponent
   ],
   imports: [
     BrowserModule,
