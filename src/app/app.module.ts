@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeLoginComponent } from './home-login/home-login.component';
 import { AddToDoComponent } from './add-to-do/add-to-do.component';
+import { ViewComponent } from './view/view.component';
 
 const myRoute : Routes=[
   {
@@ -15,6 +16,10 @@ const myRoute : Routes=[
   {
     path:"add",
     component:AddToDoComponent
+  },
+  {
+    path:"view",
+    component:ViewComponent
   }
 
 ]
@@ -23,7 +28,8 @@ const myRoute : Routes=[
   declarations: [
     AppComponent,
     HomeLoginComponent,
-    AddToDoComponent
+    AddToDoComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
