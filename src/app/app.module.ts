@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeLoginComponent } from './home-login/home-login.component';
 import { AddToDoComponent } from './add-to-do/add-to-do.component';
 import { ViewComponent } from './view/view.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute : Routes=[
   {
@@ -29,7 +30,8 @@ const myRoute : Routes=[
     AppComponent,
     HomeLoginComponent,
     AddToDoComponent,
-    ViewComponent
+    ViewComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
