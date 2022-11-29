@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-to-do.component.css']
 })
 export class AddToDoComponent {
+userid=""
+todoid=""
+title=""
+status=""
+
+readValue = () =>
+{
+  let data:any = {"userid":this.userid,"todoid":this.todoid,"title":this.title,"status":this.status}
+  console.log(data)
+}
 
 }

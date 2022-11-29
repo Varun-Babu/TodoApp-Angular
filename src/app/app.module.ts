@@ -8,6 +8,7 @@ import { HomeLoginComponent } from './home-login/home-login.component';
 import { AddToDoComponent } from './add-to-do/add-to-do.component';
 import { ViewComponent } from './view/view.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute : Routes=[
   {
@@ -36,7 +37,8 @@ const myRoute : Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
